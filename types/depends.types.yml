@@ -1,0 +1,15 @@
+tosca_definitions_version: cloudify_dsl_1_3
+
+node_types:
+  antillion.demo.DependentNode:
+    derived_from: antillion.demo.DummyNode
+    properties:
+      install_agent: { default: false }
+    interfaces:
+      cloudify.interfaces.lifecycle:
+        create:
+          implementation: dependent.ant_depends.noop.log_message
+          executor: central_deployment_agent
+          inputs:
+            message:
+              default: This is the default message on antillion.demo.DependentNode

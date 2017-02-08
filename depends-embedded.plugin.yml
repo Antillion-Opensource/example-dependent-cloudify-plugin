@@ -1,0 +1,7 @@
+tosca_definitions_version: cloudify_dsl_1_3
+
+plugins:
+  dependent:
+    executor: central_deployment_agent
+    source: dependent-cloudify-plugin
+    install_arguments: -r embedded-requirements.txt
