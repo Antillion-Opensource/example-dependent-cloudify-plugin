@@ -16,7 +16,7 @@ import setuptools
 
 setuptools.setup(
 
-    name='dependent-cloudify-plugin',
+    name='example-dependent-cloudify-plugin',
     version='0.1.1',
     author='Oliver Tupman',
     author_email='otupman@antillion.com',
