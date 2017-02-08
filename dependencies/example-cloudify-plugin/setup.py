@@ -16,7 +16,7 @@ import setuptools
 
 setuptools.setup(
 
-    name='dummy-cloudify-plugin',
+    name='example-cloudify-plugin',
     version='0.1.1',
     author='Oliver Tupman',
     author_email='otupman@antillion.com',
