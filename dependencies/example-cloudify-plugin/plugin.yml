@@ -1,0 +1,9 @@
+tosca_definitions_version: cloudify_dsl_1_3
+
+includes:
+  - http://rome-way-832.pancakeapps.com/dummy.types.yml
+
+plugins:
+  dummy:
+    executor: central_deployment_agent
+    source: http://rome-way-832.pancakeapps.com/dummy-cloudify-plugin.zip
